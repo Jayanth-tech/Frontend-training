@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-indigo-600 text-white p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Frontend Development </h1>
+            <div class="space-x-4">
+                <a href="uiux.html" class="hover:text-indigo-200 transition hover:border-b-2">HTML</a>
+                <a href="CSS.html" class="hover:text-indigo-200 transition hover:border-b-2">CSS</a>
+                <a href="Practice.html" class="hover:text-indigo-200 transition hover:border-b-2">Practice</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-24 pb-12 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-4 animate-fade-in">Learn Frontend Development From Scratch</h1>
+                <p class="text-xl mb-8">Master the fundamentals of web development with interactive examples and real-world applications</p>
+                <button onclick="scrollToSection('html')" class="bg-white text-indigo-600 px-6 py-2 rounded-full font-semibold hover:bg-indigo-100 transition">
+                    Start Learning
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="html" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-start">HTML Fundamentals</h2>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+                <div class="p-6 ">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Introduction</h3>
+                    <p class="text-gray-600 mb-4">HTML is the standard markup language for creating web pages. First created by Tim Berners-Lee in 1991, HTML has evolved to become the backbone of the modern web.</p>
+                    
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                        <h4 class="font-semibold text-blue-900">Why HTML?</h4>
+                        <ul class="list-disc ml-6 mt-2 text-blue-800">
+                            <li>HTML stands for Hyper Text Markup Language</li>
+                            <li>HTML is the standard markup language for creating Web pages</li>
+                            <li>HTML describes the structure of a Web page</li>
+                            <li>HTML elements tell the browser how to display the content</li>
+                            <li>HTML consists of a set of tags contained within an HTML document, and the associated files typically have either a ".html" or ".htm" extension</li>
+                            <li>There are several versions of HTML, with HTML5 being the most recent version</li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="-mb-16 font-medium p-4 text-2xl ">How do websites work?</h2>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8 py-4 pt-20 item-center flex justify-center">
+    
+<div>
+
+    <div>
+        <img src="images\image1.png" alt="" srcset="">
+    </div>
+</div>
+</div>
+
+<div class="mt-16">
+    <div class="flex  -mb-12 font-medium ml-6">
+        <h2>A typical HTML page looks like this:</h2>
+    </div>
+    <div>
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-8 py-4 pt-20 item-center  flex justify-center">
+    
+
+        <div class="w-full p-4 mx-20">
+        
+           <!-- Outermost container -->
+           <div class="border border-gray-600 border-2 p-4">
+            &lt;html&gt;
+            
+            <!-- Head section container -->
+            <div class="border border-gray-600 border-2 p-4 my-2">
+                &lt;head&gt;
+                
+                <!-- Title container -->
+                <div class="border border-gray-600 border-2 p-2 my-2">
+                    &lt;title&gt;Page title&lt;/title&gt;
+                </div>
+                
+                &lt;/head&gt;
+            </div>
+            
+            <!-- Body section container -->
+            <div class="border border-gray-600 border-2 p-4 my-2">
+                &lt;body&gt;
+                
+                <!-- H1 container -->
+                <div class="border border-gray-600 border-2 p-2 my-2">
+                    &lt;h1&gt;This is a heading&lt;/h1&gt;
+                </div>
+                
+                <!-- First paragraph container -->
+                <div class="border border-gray-600 border-2 p-2 my-2">
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                </div>
+                
+                <!-- Second paragraph container -->
+                <div class="border border-gray-600 border-2 p-2 my-2">
+                    &lt;p&gt;This is another paragraph&lt;/p&gt;
+                </div>
+                
+                &lt;/body&gt;
+            </div>
+            
+            &lt;/html&gt;
+        </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<div class="w-full pb-6 ">
+    <div class="bg-white rounded-xl shadow-lg p-8 space-y-6">
+      <!-- Header Section -->
+      <div class="space-y-3">
+        <h1 class="text-3xl font-bold text-gray-900">Simple HTML Document</h1>
+        <p class="text-gray-600">
+          Learn the fundamentals of HTML, the building block of web
+          development. Start with basic tags and structure to create your
+          first webpage.
+        </p>
+      </div>
+
+      <!-- Code Example Section -->
+      <div class="space-y-4">
+        
+        
+        <div class="flex items-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 text-gray-600"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          
+          <h2 class="font-bold text-gray-800">Example:</h2>
+        </div>
+
+        <div class="relative">
+
+            <textarea
+  id="codeInput"
+  class="w-full h-32 bg-gray-50 rounded-lg p-4 font-mono text-sm border focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;Welcomw to Frontend Development Training.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+
+        </div>
+
+        <button
+          id="previewButton"
+          class="max-w-2xl bg-blue-600 text-white py-3 px-6 rounded-lg font-medium transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        >
+          Preview Output
+        </button>
+
+        <!-- Preview Section -->
+        <div id="previewSection" class="mt-6 space-y-2 hidden">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-gray-800">Output:</h3>
+            <button
+              id="hideButton"
+              class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+            >
+              Hide Output
+            </button>
+          </div>
+          <div
+            id="outputContent"
+            class="p-4 border rounded-lg bg-white"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Basic HTML Structure</h3>
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    <p class="mt-4 text-gray-600">Every HTML document starts with this basic structure. The DOCTYPE declares the document type, and the html element is the root element.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Common HTML Tags</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="border p-4 rounded hover:bg-gray-50">
+                            <h4 class="font-semibold text-lg mb-2">&lt;h1&gt; to &lt;h6&gt;</h4>
+                            <p class="text-sm text-gray-600">Headings from most important (h1) to least important (h6)</p>
+                            <div class="mt-2 space-y-1">
+                                <h1 class="text-2xl">Heading 1</h1>
+                                <h2 class="text-xl">Heading 2</h2>
+                                <h3 class="text-lg">Heading 3</h3>
+                            </div>
+                        </div>
+                        <div class="border p-4 rounded hover:bg-gray-50">
+                            <h4 class="font-semibold text-lg mb-2">&lt;p&gt; and &lt;span&gt;</h4>
+                            <p class="text-sm text-gray-600">Paragraph and inline text elements</p>
+                            <div class="mt-2">
+                                <p>This is a paragraph with <span class="text-indigo-600">colored span</span> inside.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Lists and Links</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Ordered and Unordered Lists</h4>
+                            <ul class="list-disc pl-5 mb-4">
+                                <li>Unordered item 1</li>
+                                <li>Unordered item 2</li>
+                            </ul>
+                            <ol class="list-decimal pl-5">
+                                <li>Ordered item 1</li>
+                                <li>Ordered item 2</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Links</h4>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transition">Regular link</a><br>
+                            <a href="#" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded mt-2 hover:bg-indigo-700 transition">Button-style link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+<!-- Expanded HTML Section -->
+<section id="html" class="py-16">
+    <div class="container mx-auto px-4">
+        <!-- <h2 class="text-3xl font-bold mb-8 text-center">HTML Fundamentals</h2> -->
+        
+        <!-- HTML Concepts -->
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Basic Structure - Same as before -->
+            
+            <!-- Document Structure -->
+          
+            <!-- Text Content -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-4 text-indigo-600">Text Content Elements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Text Formatting</h4>
+                        <pre><code class="language-html">&lt;p&gt;Regular paragraph&lt;/p&gt;
+&lt;strong&gt;Bold text&lt;/strong&gt;
+&lt;em&gt;Italic text&lt;/em&gt;
+&lt;mark&gt;Highlighted text&lt;/mark&gt;
+&lt;sub&gt;Subscript&lt;/sub&gt;
+&lt;sup&gt;Superscript&lt;/sup&gt;
+&lt;blockquote&gt;Quoted text&lt;/blockquote&gt;
+&lt;pre&gt;Preformatted text&lt;/pre&gt;
+&lt;code&gt;Code snippet&lt;/code&gt;</code></pre>
+                        <div class="mt-4 space-y-2">
+                            <p>Regular paragraph</p>
+                            <p><strong>Bold text</strong></p>
+                            <p><em>Italic text</em></p>
+                            <p><mark class="bg-yellow-200">Highlighted text</mark></p>
+                            <p>Text with <sub>subscript</sub> and <sup>superscript</sup></p>
+                            <blockquote class="border-l-4 border-indigo-500 pl-4 italic">Quoted text</blockquote>
+                        </div>
+                    </div>
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Lists & Definition</h4>
+                        <pre><code class="language-html">&lt;ul&gt;
+    &lt;li&gt;Unordered item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Term&lt;/dt&gt;
+    &lt;dd&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                        <div class="mt-4">
+                            <dl class="space-y-2">
+                                <dt class="font-semibold">HTML</dt>
+                                <dd class="pl-4">HyperText Markup Language</dd>
+                                <dt class="font-semibold">CSS</dt>
+                                <dd class="pl-4">Cascading Style Sheets</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links & Media -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-4 text-indigo-600">Links & Media Elements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Advanced Links</h4>
+                        <pre><code class="language-html">&lt;!-- External Link --&gt;
+&lt;a href="https://example.com" target="_blank" rel="noopener"&gt;
+    External Link
+&lt;/a&gt;
+
+&lt;!-- Email Link --&gt;
+&lt;a href="mailto:example@email.com"&gt;Send email&lt;/a&gt;
+
+&lt;!-- Phone Link --&gt;
+&lt;a href="tel:+1234567890"&gt;Call us&lt;/a&gt;
+
+&lt;!-- Download Link --&gt;
+&lt;a href="file.pdf" download&gt;Download PDF&lt;/a&gt;</code></pre>
+                    </div>
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Media Elements</h4>
+                        <pre><code class="language-html">&lt;!-- Responsive Image --&gt;
+&lt;img src="image.jpg" 
+     alt="Description"
+     width="800"
+     height="600"
+     loading="lazy"&gt;
+
+&lt;!-- Video --&gt;
+&lt;video controls width="320" height="240"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;track src="captions.vtt" kind="captions"&gt;
+&lt;/video&gt;
+
+&lt;!-- Audio --&gt;
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forms -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-4 text-indigo-600">Forms & Input Elements</h3>
+                <div class="space-y-4">
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Form Structure</h4>
+                        <pre><code class="language-html">&lt;form action="/submit" method="POST"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Personal Information&lt;/legend&gt;
+        
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Input Types</h4>
+                        <pre><code class="language-html">&lt;input type="text"&gt;      &lt;!-- Text input --&gt;
+&lt;input type="password"&gt;  &lt;!-- Password input --&gt;
+&lt;input type="email"&gt;     &lt;!-- Email input --&gt;
+&lt;input type="number"&gt;    &lt;!-- Numeric input --&gt;
+&lt;input type="tel"&gt;       &lt;!-- Telephone input --&gt;
+&lt;input type="url"&gt;       &lt;!-- URL input --&gt;
+&lt;input type="date"&gt;      &lt;!-- Date picker --&gt;
+&lt;input type="time"&gt;      &lt;!-- Time picker --&gt;
+&lt;input type="color"&gt;     &lt;!-- Color picker --&gt;
+&lt;input type="range"&gt;     &lt;!-- Range slider --&gt;
+&lt;input type="file"&gt;      &lt;!-- File upload --&gt;
+&lt;input type="checkbox"&gt;  &lt;!-- Checkbox --&gt;
+&lt;input type="radio"&gt;     &lt;!-- Radio button --&gt;</code></pre>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="Text input" class="border p-2 rounded">
+                            <input type="range" class="w-full">
+                            <input type="color" class="h-10">
+                            <input type="date" class="border p-2 rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tables -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <h3 class="text-xl font-semibold mb-4 text-indigo-600">Tables</h3>
+                <div class="space-y-4">
+                    <div class="border p-4 rounded hover:bg-gray-50">
+                        <h4 class="font-semibold text-lg mb-2">Table Structure</h4>
+                        <pre><code class="language-html">&lt;table&gt;
+    &lt;caption&gt;Table Caption&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data 1&lt;/td&gt;
+            &lt;td&gt;Data 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;Footer&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                        <table class="mt-4 w-full border-collapse border">
+                            <caption class="text-sm text-gray-600 mb-2">Sample Table</caption>
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="border p-2">Header 1</th>
+                                    <th class="border p-2">Header 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border p-2">Data 1</td>
+                                    <td class="border p-2">Data 2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="uiux.html" class="hover:text-indigo-300 transition">HTML Basics</a></li>
+                        <li><a href="CSS.html" class="hover:text-indigo-300 transition">CSS Fundamentals</a></li>
+                        <li><a href="Practice.html" class="hover:text-indigo-300 transition">Practice Area</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-indigo-300 transition">Documentation</a></li>
+                        <li><a href="#" class="hover:text-indigo-300 transition">Examples</a></li>
+                        <li><a href="#" class="hover:text-indigo-300 transition">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4">Stay updated with our latest tutorials and resources.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Frontend Development Fundamentals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            Prism.highlightAll();
+        });
+    </script>
+<script>
+    // Preview logic
+    // Get DOM elements
+    const codeInput = document.getElementById("codeInput");
+    const previewButton = document.getElementById("previewButton");
+    const hideButton = document.getElementById("hideButton");
+    const previewSection = document.getElementById("previewSection");
+    const outputContent = document.getElementById("outputContent");
+
+    // Preview button click handler
+    previewButton.addEventListener("click", () => {
+      const code = codeInput.value;
+      outputContent.innerHTML = code;
+      previewSection.classList.remove("hidden");
+    });
+
+    // Hide button click handler
+    hideButton.addEventListener("click", () => {
+      previewSection.classList.add("hidden");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Practice</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-indigo-600 text-white p-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">HTML & CSS Fundamentals</h1>
+            <div class="space-x-4">
+                <a href="uiux.html" class="hover:text-indigo-200 transition">HTML</a>
+                <a href="CSS.html" class="hover:text-indigo-200 transition">CSS</a>
+                <a href="Practice.html" class="hover:text-indigo-200 transition">Practice</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="practice" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Interactive Practice</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Try it yourself!</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block mb-2 font-semibold">HTML Editor</label>
+                            <textarea id="htmlEditor" class="w-full h-64 p-4 border rounded font-mono text-sm" placeholder="Enter your HTML here...">&lt;div class="my-element"&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Edit this code and see the results live!&lt;/p&gt;
+&lt;/div&gt;</textarea>
+                        </div>
+                        <div>
+                            <label class="block mb-2 font-semibold">Preview</label>
+                            <div id="preview" class="w-full h-64 p-4 border rounded bg-gray-50 overflow-auto">
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="updatePreview()" class="mt-4 bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition">
+                        Update Preview
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="uiux.html" class="hover:text-indigo-300 transition">HTML Basics</a></li>
+                        <li><a href="CSS.html" class="hover:text-indigo-300 transition">CSS Fundamentals</a></li>
+                        <li><a href="Practice.html" class="hover:text-indigo-300 transition">Practice Area</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-indigo-300 transition">Documentation</a></li>
+                        <li><a href="#" class="hover:text-indigo-300 transition">Examples</a></li>
+                        <li><a href="#" class="hover:text-indigo-300 transition">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4">Stay updated with our latest tutorials and resources.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 HTML & CSS Fundamentals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function updatePreview() {
+            const htmlCode = document.getElementById('htmlEditor').value;
+            const preview = document.getElementById('preview');
+            preview.innerHTML = htmlCode;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePreview();
+        });
+    </script>
+</body>
+</html>
